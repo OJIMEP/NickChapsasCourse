@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NickChapsasCourse.Domain;
 
 namespace NickChapsasCourse.Data
 {
@@ -9,5 +10,7 @@ namespace NickChapsasCourse.Data
             : base(options)
         {
         }
+
+        public DbSet<Post> Posts { get; set; }
     }
 }
